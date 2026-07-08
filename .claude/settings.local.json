@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -m pip install pyserial)",
+      "PowerShell(python -m py_compile raw_data.py)",
+      "PowerShell(if \\($?\\) { \"syntax OK\" })",
+      "mcp__visualize__read_me",
+      "PowerShell($j = Get-Content \"C:\\\\Users\\\\conor\\\\.claude\\\\projects\\\\C--Users-conor-Documents-Learning-Electronics-MSc-Project-IMU\\\\eb7c3806-612f-4ac2-91bf-f38eea5448f3\\\\tool-results\\\\toolu_01URUJ2p3i2QfJBLT5HDyKYS.json\" -Raw | ConvertFrom-Json; $t = $j[0].text; $i = $t.IndexOf\\(\"SVG\"\\); $t.Substring\\($i, 4000\\))",
+      "PowerShell($j = Get-Content \"C:\\\\Users\\\\conor\\\\.claude\\\\projects\\\\C--Users-conor-Documents-Learning-Electronics-MSc-Project-IMU\\\\eb7c3806-612f-4ac2-91bf-f38eea5448f3\\\\tool-results\\\\toolu_01URUJ2p3i2QfJBLT5HDyKYS.json\" -Raw | ConvertFrom-Json; $t = $j[0].text; $i = $t.IndexOf\\(\"## SVG Setup\"\\); if \\($i -lt 0\\) { $i = $t.IndexOf\\(\"CSS variable\"\\) }; $t.Substring\\($i, 5000\\))",
+      "PowerShell($j = Get-Content \"C:\\\\Users\\\\conor\\\\.claude\\\\projects\\\\C--Users-conor-Documents-Learning-Electronics-MSc-Project-IMU\\\\eb7c3806-612f-4ac2-91bf-f38eea5448f3\\\\tool-results\\\\toolu_01URUJ2p3i2QfJBLT5HDyKYS.json\" -Raw | ConvertFrom-Json; $t = $j[0].text; $i = $t.IndexOf\\(\"### SVG\"\\); $t.Substring\\($i, 3500\\))",
+      "PowerShell($j = Get-Content \"C:\\\\Users\\\\conor\\\\.claude\\\\projects\\\\C--Users-conor-Documents-Learning-Electronics-MSc-Project-IMU\\\\eb7c3806-612f-4ac2-91bf-f38eea5448f3\\\\tool-results\\\\toolu_01URUJ2p3i2QfJBLT5HDyKYS.json\" -Raw | ConvertFrom-Json; $t = $j[0].text; $i = $t.IndexOf\\(\"SVG diagrams\"\\); if \\($i -lt 0\\) { $i = $t.IndexOf\\(\"text class\"\\) }; $t.Substring\\([Math]::Max\\($i,0\\), 3500\\))",
+      "PowerShell(python -m py_compile accel_angles.py)"
+    ]
+  }
+}
